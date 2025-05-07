@@ -13,24 +13,22 @@ import java.util.*;
  */
 public class GroupAnagrams {
 
-    public static List<List<String>> groupAnagrams(String[] strings) {
-        Map<String, List<String>> anargramGroup = new HashMap<>();
-        for(String string : strings) {
-            char[] chars = string.toCharArray();
-            Arrays.sort(chars);
-            String canonical = new String(chars);
-
-            if(anargramGroup.containsKey(canonical)) {
-                anargramGroup.get(canonical).add(string);
-            } else {
-                List<String> group = new ArrayList<>();
-                group.add(string);
-                anargramGroup.put(canonical, group);
-            }
-        }
-        return new ArrayList<>(anargramGroup.values());
-    }
-
+   public static List<List<String>> groupAnagrams(String[] strings) {
+       Map<String, List<String>> anagramGroups = new HashMap<>();
+       for (String string : strings) {
+           char[] chars = string.toCharArray();
+           Arrays.sort(chars);
+           String canonical = new String(chars);
+           if(anagramGroups.containsKey(canonical)) {
+               anagramGroups.get(canonical).add(string);
+           } else {
+               List<String> group = new ArrayList<>();
+               group.add(string);
+               anagramGroups.put(canonical, group);
+           }
+       }
+       return new ArrayList<>(anagramGroups.values());
+   }
 
     public static void main(String[] args) {
         System.out.println("1st set:");

@@ -7,15 +7,14 @@ import java.util.Map;
 public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
-
-        for(int i=0; i<nums.length; i++) {
+        for (int i=0; i<nums.length; i++) {
             int num = nums[i];
-            int complement = target - num;
-
+            int complement = target-num;
             if(numMap.containsKey(complement)) {
                 return new int[]{numMap.get(complement), i};
+            } else {
+                numMap.put(num, i);
             }
-            numMap.put(num, i);
         }
         return new int[] {};
     }

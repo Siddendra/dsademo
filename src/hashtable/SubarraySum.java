@@ -4,7 +4,7 @@ import java.util.Map;
 public class SubarraySum {
 
 
-    public static int[] subarraySum(int[] nums, int target) {
+    public static int[] subarraySuma(int[] nums, int target) {
         Map<Integer, Integer> sumIndex = new HashMap<>();
         sumIndex.put(0, -1);
         int currentSum = 0;
@@ -18,6 +18,20 @@ public class SubarraySum {
         }
 
         return new int[]{};
+    }
+
+    public static int[] subarraySum(int[] numms, int target) {
+        Map<Integer, Integer> sumIndex = new HashMap<>();
+        sumIndex.put(0, -1);
+        int currentSumm = 0;
+        for (int i=0; i < numms.length; i++) {
+            currentSumm += numms[i];
+            if(sumIndex.containsKey(currentSumm - target)) {
+                return new int[]{sumIndex.get(currentSumm - target) +1, i};
+            }
+            sumIndex.put(currentSumm, i);
+        }
+        return  new int[]{};
     }
 
 
