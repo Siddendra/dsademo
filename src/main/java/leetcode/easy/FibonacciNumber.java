@@ -1,0 +1,20 @@
+package leetcode.easy;
+
+public class FibonacciNumber {
+    public static int fib(int n) {
+        if(n <= 1) return n;
+        int[] map = new int[n +1];
+        map[0] =0;
+        map[1] = 1;
+
+        for(int i =2; i<=n; i++) {
+            map[i] = map[i-1] + map[i-2];
+        }
+        return map[n];
+    }
+
+    public static void main(String args[]) {
+        int n =9;
+        System.out.println("FibonacciNumber of "+ n +" is: "+ fib(n));
+    }
+}
