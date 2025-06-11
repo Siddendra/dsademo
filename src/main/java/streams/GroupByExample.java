@@ -1,2 +1,2 @@
-package streams;public class GroupByExample {
+package main.java.streams;public class GroupByExample {
 }

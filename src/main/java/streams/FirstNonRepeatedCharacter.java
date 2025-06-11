@@ -1,4 +1,4 @@
-package streams;
+package main.java.streams;
 
 // Given a string, find the first non-repeated character in it using stream function.
 
