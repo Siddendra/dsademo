@@ -1,4 +1,4 @@
-package Queue;
+package main.java.Queue;
 
 public class Queue {
 
