@@ -1,4 +1,4 @@
-package binaryseachtree;
+package main.java.binaryseachtree;
 
 public class BinarySearchTree {
     private Node root;

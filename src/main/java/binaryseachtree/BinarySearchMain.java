@@ -1,4 +1,4 @@
-package binaryseachtree;
+package main.java.binaryseachtree;
 
 public class BinarySearchMain {
     public static void main(String args[]) {
