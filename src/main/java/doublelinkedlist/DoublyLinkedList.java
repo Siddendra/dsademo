@@ -1,4 +1,4 @@
-package doublelinkedlist;
+package main.java.doublelinkedlist;
 
 public class DoublyLinkedList {
 
