@@ -1,4 +1,4 @@
-package leetcode.dynamicprogram;
+package main.java.leetcode.dynamicprogram;
 
 public class AlternatingPrinter {
 
