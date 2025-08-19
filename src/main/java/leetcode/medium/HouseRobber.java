@@ -1,6 +1,4 @@
-package leetcode.medium;
-
-import java.io.FilterOutputStream;
+package main.java.leetcode.medium;
 
 public class HouseRobber {
 

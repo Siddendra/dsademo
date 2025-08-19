@@ -1,4 +1,4 @@
-package leetcode.medium;
+package main.java.leetcode.medium;
 
 
   class TreeNode {
