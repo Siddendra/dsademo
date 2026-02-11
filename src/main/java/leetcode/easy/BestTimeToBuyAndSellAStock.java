@@ -1,4 +1,4 @@
-package leetcode.easy;
+package main.java.leetcode.easy;
 
 public class BestTimeToBuyAndSellAStock {
 
