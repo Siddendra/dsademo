@@ -9,6 +9,7 @@ public class AlternatingPrinter {
             AlternatingPrinter printer = new AlternatingPrinter();
             Thread numberThread = new Thread(() -> printer.printNumbers());
             Thread letterThread = new Thread(() -> printer.printLetters());
+
             numberThread.start();
             letterThread.start();
         }
